@@ -13,40 +13,10 @@ Une petite librairie souhaite gérer ses livres et ses clients à l'aide d'une b
 ---
 ## Instructions pour exécuter le projet
 
-1. Créer la base de données :
-    CREATE DATABASE Librairie;
-2. Utiliser la base de données :
-    USE Librairie;
-3. Créer les tables :
-   - Table Livres.
-      CREATE TABLE Livres (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    titre VARCHAR(255) NOT NULL,
-    auteur VARCHAR(255) NOT NULL,
-    prix DECIMAL(5,2) NOT NULL,
-    stock INT NOT NULL
-);
-   - Table Clients.
-      CREATE TABLE Clients (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    nom VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL UNIQUE,
-    date_inscription DATE NOT NULL
-);
-4. Insérer les données initiales :
-   - Table Livres.
-       INSERT INTO Livres (titre, auteur, prix, stock) VALUES
-('Les Misérables', 'Victor Hugo', 20.50, 12),
-('Le Petit Prince', 'Antoine de Saint-Exupéry', 15.99, 5),
-('1984', 'George Orwell', 18.00, 8),
-('Harry Potter et la pierre philosophale', 'J.K. Rowling', 25.00, 10);
-   - Table Clients.
-      INSERT INTO Clients (nom, email, date_inscription) VALUES
-('Jean Dupont', 'jean.dupont@email.fr', '2024-01-10'),
-('Alice Martin', 'alice.martin@email.fr', '2024-02-15'),
-('Bob Robert', 'bob.robert@email.fr', '2024-03-20');
-
-
+1. Créer la base de données.
+2. Utiliser la base de données.
+3. Créer les tables.
+4. Insérer les données initiales.
 
 ---
 
